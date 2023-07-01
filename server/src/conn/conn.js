@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const db = "mongodb+srv://viharp2002:viharPrajapati@cluster0.fzojtay.mongodb.net/iForum?retryWrites=true&w=majority";
+const db = process.env.DATABASE;
 
 mongoose.connect(db).then(()=>{
    console.log("connection");
